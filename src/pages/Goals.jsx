@@ -1,5 +1,8 @@
-goals.filter(goal =>
-    goal.title
-      .toLowerCase()
-      .includes(search.toLowerCase())
+export default function Goals() {
+  return (
+    <section>
+      <h1>Goals</h1>
+      <p>Your goals list will appear here.</p>
+    </section>
   )
+}

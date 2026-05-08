@@ -1,10 +1,10 @@
 import { createTheme } from "@mui/material/styles"
 
-export const getTheme = (language) =>
+export const getTheme = (language, darkMode = false) =>
   createTheme({
     direction: language === "fa" ? "rtl" : "ltr",
 
     palette: {
-     mode: darkMode ? "dark" : "light"
-    }
+      mode: darkMode ? "dark" : "light",
+    },
   })

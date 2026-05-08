@@ -1,17 +1,25 @@
 import { ThemeProvider } from "@mui/material/styles"
 import { CssBaseline } from "@mui/material"
 import { getTheme } from "./theme"
-import { useSettings } from "../context/SettingsContext"
+import { SettingsProvider, useSettings } from "../context/SettingsContext"
 
-export default function Providers({ children }) {
+function ThemedProviders({ children }) {
   const { language } = useSettings()
 
-  const theme = getTheme(language)
+  const theme = getTheme(language, false)
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       {children}
     </ThemeProvider>
+  )
+}
+
+export default function Providers({ children }) {
+  return (
+    <SettingsProvider>
+      <ThemedProviders>{children}</ThemedProviders>
+    </SettingsProvider>
   )
 }

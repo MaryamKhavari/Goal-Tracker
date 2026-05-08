@@ -1,12 +1,13 @@
 import { Card, CardContent, Typography } from "@mui/material"
 
-export default function StatsCards() {
+export default function StatsCards({ completion = 0, xp = 0, streak = 0 }) {
+  const level = Math.max(1, Math.floor(xp / 500) + 1)
+
   return (
     <Card>
       <CardContent>
-
         <Typography variant="h4">
-          72%
+          {completion}%
         </Typography>
 
         <Typography>
@@ -14,13 +15,16 @@ export default function StatsCards() {
         </Typography>
 
         <Typography>
-            XP: {xp}
+          XP: {xp}
         </Typography>
 
         <Typography>
-            Level: {level}
+          Level: {level}
         </Typography>
 
+        <Typography>
+          Streak: {streak} days
+        </Typography>
       </CardContent>
     </Card>
   )
