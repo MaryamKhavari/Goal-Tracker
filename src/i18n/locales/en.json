@@ -1,4 +1,14 @@
 {
-    "dashboard": "Dashboard",
-    "newGoal": "New Goal"
-  }
+  "dashboard": "Dashboard",
+  "goals": "Goals",
+  "categories": "Categories",
+  "settings": "Settings",
+
+  "welcome": "Welcome Back",
+
+  "activeGoals": "Active Goals",
+
+  "completedGoals": "Completed Goals",
+
+  "newGoal": "New Goal"
+}

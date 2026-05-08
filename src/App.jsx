@@ -1,5 +1,14 @@
-import AppRouter from "./app/router"
+import Navbar from "./components/layout/Navbar"
+import Router from "./app/router"
 
 export default function App() {
-  return <AppRouter />
+  return (
+    <>
+
+      <Navbar />
+
+      <Router />
+
+    </>
+  )
 }

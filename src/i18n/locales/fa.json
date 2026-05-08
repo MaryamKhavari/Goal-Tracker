@@ -1,4 +1,14 @@
 {
-    "dashboard": "داشبورد",
-    "newGoal": "هدف جدید"
-  }
+  "dashboard": "داشبورد",
+  "goals": "هدف ها",
+  "categories": "دسته بندی ها",
+  "settings": "تنظیمات",
+
+  "welcome": "خوش آمدی",
+
+  "activeGoals": "هدف های فعال",
+
+  "completedGoals": "هدف های تکمیل شده",
+
+  "newGoal": "هدف جدید"
+}
