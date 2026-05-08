@@ -1,4 +1,4 @@
-import { useState, useContext } from "react"
+import { useState } from "react"
 
 import {
   AppBar,
@@ -31,20 +31,18 @@ import {
 import { useTranslation }
 from "react-i18next"
 
-import { SettingsContext } from "../../context/SettingsContext"
+import { useSettings } from "../../context/SettingsContext"
 
 export default function Navbar() {
 
   const [open, setOpen] = useState(false)
-  const { t, i18n } =
+  const { i18n } =
     useTranslation()
 
   const {
     darkMode,
     setDarkMode,
-    language,
-    setLanguage
-  } = useContext(SettingsContext)
+  } = useSettings()
 
   const navLinks = [
     {

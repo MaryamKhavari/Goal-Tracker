@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next"
+
 export default function Goals() {
+  const { t } = useTranslation()
+
   return (
     <section>
       <h1>{t("goals")}</h1>
